@@ -53,11 +53,18 @@
             .main-text-row{
                 margin-top: 100px;
                 color: #FFF;
+                width: fit-content;
+                margin-left: 60px;
             }
             .main-text-row h1{
                 font-weight: 800;
                 font-size: 52px;
                 line-height: 60px;
+            }
+            @media screen and (max-width: 992px) {
+                .main-text-row{
+                    margin-left: 0px;
+                }
             }
             .waitlist{
                 display: flex;
@@ -85,6 +92,13 @@
                 position: relative;
                 bottom: 100px;
                 left: 100px;
+            }
+            @media screen and (max-width: 992px) {
+                .wallet-img{
+                    position: relative;
+                    bottom: 100px;
+                    left: 0px;
+                }
             }
             .modal-header h5{
                 color: #000;
@@ -120,27 +134,31 @@
                 height: 100%;
                 width: 100%;
             }
+            .modal-content{
+                margin: 0 auto;
+            }
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+                <img src="http://drive.google.com/uc?export=view&id=1e8wNtJlgP1lHNpNoMtjZYTkODTxs1GaJ" alt="logo" />
+            <!-- <button class="fancy-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto mt-4">
+                    <a class="btn btn-primary get-started">Join Waitlist</a>
+                </div>
+            </div> -->
+        </div>
+    </nav>
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                    <img src="http://drive.google.com/uc?export=view&id=1e8wNtJlgP1lHNpNoMtjZYTkODTxs1GaJ" alt="logo" />
-                <!-- <button class="fancy-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
-                <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto mt-4">
-                        <a class="btn btn-primary get-started">Join Waitlist</a>
-                    </div>
-                </div> -->
+        <div class="row main-text-row">
+            <div class="col-lg-4 col-sm-12 wallet-img order-first order-lg-2">
+                <img src="http://drive.google.com/uc?export=view&id=1Hxm_MWzbop1CXPBYJp26ac5507x1UQ1e" alt="">
             </div>
-        </nav>
-    </div>
-    <div class="container">
-        <div class="row ms-4 main-text-row">
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
                 <p>We’re cooking something ❤️</p>
                 <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi justo euismod mauris donec quisque. 
@@ -156,10 +174,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 wallet-img">
-                <img src="http://drive.google.com/uc?export=view&id=1Hxm_MWzbop1CXPBYJp26ac5507x1UQ1e" alt="">
-            </div>
-
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
